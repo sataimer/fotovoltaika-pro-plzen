@@ -18,5 +18,19 @@
 .wide{margin:0 max(7vw,30px) 80px}
 .gallery figcaption{display:grid}
 .gallery figcaption span{font-weight:400;color:var(--muted)}
+.energy-diagram{padding:70px max(7vw,30px);background:var(--cream)}
+.energy-diagram h2{max-width:700px;margin:8px 0 18px}
+.energy-diagram svg{display:block;width:min(100%,900px);height:auto;margin:20px auto 10px;color:var(--green2)}
+.energy-node circle,.energy-node rect{fill:#fff;stroke:var(--green2);stroke-width:3}
+.energy-node text{font-size:34px;text-anchor:middle;dominant-baseline:middle;fill:var(--green2)}
+.energy-node small{font-size:14px;text-anchor:middle;fill:var(--green);font-weight:700}
+.energy-diagram svg>path{fill:none;stroke:var(--lime);stroke-width:4}
+.energy-diagram>p{max-width:900px;margin:14px auto 0;color:var(--muted)}
+.guide-index{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.article-card{display:block;padding:28px;background:var(--cream);border:1px solid var(--line);color:var(--ink);text-decoration:none}
+.article-card span{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--green2)}
+.article-card h2{margin:10px 0;font-size:25px}.article-card p{color:var(--muted)}.article-card b{color:var(--green2)}
+.guide{max-width:980px}.guide h2{margin-top:42px}.guide-contact{padding:24px;background:var(--cream);border-left:5px solid var(--lime)}
+@media(max-width:650px){.guide-index{grid-template-columns:1fr}.energy-diagram{padding:50px 20px}.energy-diagram svg{min-width:680px;transform:scale(.48);transform-origin:left center;width:208%;margin-bottom:-70px}}
 @media(max-width:1000px){.roof-section{grid-template-columns:1fr}.process-band{grid-template-columns:1fr 1fr}.roof-details{grid-template-columns:1fr}}
 @media(max-width:650px){.roof-section{padding:55px 20px}.roof-grid,.feature-list,.process-band{grid-template-columns:1fr}.wide{margin:0 20px 55px}.service-nav{padding-top:20px}}
